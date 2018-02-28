@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="" ></dbname>
+
+    <version value="1" ></version>
+
+
+
+    <list>
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Cloud"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Grid"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Bookmarks"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Encrypted"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Hidden"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.List"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Smb"></mapping>-->
+        <!--<mapping class="indi.aljet.myamazefilemanager_master.db.tables.Tab"></mapping>-->
+    </list>
+</litepal>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:minHeight="60dp">
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_cancel_light"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/delbook"/>
+
+    <LinearLayout
+        android:id="@+id/bookmarkrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/text1"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="?android:listPreferredItemPaddingLeft"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceSmall"
+            android:paddingLeft="?android:listPreferredItemPaddingLeft"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

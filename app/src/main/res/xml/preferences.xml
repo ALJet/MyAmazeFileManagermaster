@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/ui">
+        <Preference
+            android:key="theme"
+            android:title="@string/theme" />
+
+        <Preference
+            android:key="colors"
+            android:title="@string/color_title"
+            android:summary="@string/color_summary" />
+
+        <!--三个自定义控件 checkBox-->
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="circularimages"
+            android:summary="@string/circularimages"
+            android:title="@string/circularicons"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="showDividers"
+            android:title="@string/showDividers"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="showHeaders"
+            android:title="@string/showHeaders"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="intelliHideToolbar"
+            android:summary="@string/intellihide_toolbar_summary"
+            android:title="@string/intellihide_toolbar_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/sidebar_preferences">
+        <!--自定义控件-->
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="sidebar_folders_enable"
+            android:title="@string/showfolders_pref_title" />
+
+
+        <Preference
+            android:key="sidebar_folders"
+            android:dependency="sidebar_folders_enable"
+            android:title="@string/showfolders_pref" />
+        <!--自定义控件-->
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="sidebar_quickaccess_enable"
+            android:title="@string/showquickaccess_pref_title" />
+
+        <Preference
+            android:dependency="sidebar_quickaccess_enable"
+            android:key="sidebar_quickaccess"
+            android:title="@string/showquickaccess_pref"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/general">
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="savepaths"
+            android:summary="@string/savepathsummary"
+            android:title="@string/savepaths"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="showThumbs"
+            android:summary="@string/thumbSummary"
+            android:title="@string/thumb"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="showHidden"
+            android:title="@string/hidden"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="showLastModified"
+            android:summary="@string/lastModifiedSummary"
+            android:title="@string/lastModifiedPref"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="showFileSize"
+            android:summary="@string/sizePrefSummary"
+            android:title="@string/sizePref"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="goBack_checkbox"
+            android:summary="@string/back_summary"
+            android:title="@string/back_title"/>
+
+        <Preference
+            android:key="columns"
+            android:title="@string/gridcolumnno"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/archive_preferences">
+        <EditTextPreference android:key="extractpath"
+            android:summary="@string/archive_summary"
+            android:title="@string/archive_extract_folder" />
+        <EditTextPreference
+            android:key="zippath"
+            android:summary="@string/zip_summary"
+            android:title="@string/zip_summary" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/security">
+
+        <Preference
+            android:key="crypt_password"
+            android:summary="@string/crypt_pref_master_password_summary"
+            android:title="@string/crypt_pref_master_password_title" />
+
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:key="crypt_fingerprint"
+            android:summary="@string/crypt_pref_fingerprint_summary"
+            android:title="@string/crypt_pref_fingerprint_title"
+            android:enabled="false" />
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="@string/miscellaneous">
+
+        <Preference android:key="advancedsearch"
+            android:title="@string/advanced_search" />
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="typeablepaths"
+            android:summary="@string/typeablepaths_summary"
+            android:title="@string/typeablepaths_title"/>
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="texteditor_newstack"
+            android:title="@string/preference_newstack_title"
+            android:summary="@string/preference_newstack_summary"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/advanced">
+
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="showPermissions"
+            android:summary="@string/rootPrefSummary"
+            android:title="@string/rootPref"/>
+        <indi.aljet.myamazefilemanager_master.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="rootmode"
+            android:summary="@string/rootmodesummary"
+            android:title="@string/rootmode"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about">
+        <Preference android:key="about"
+            android:title="@string/aboutFileManager" />
+        <Preference
+            android:key="feedback"
+            android:title="@string/feedback" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

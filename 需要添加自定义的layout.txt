@@ -1,0 +1,20 @@
+xml下面的 
+
+advancedsearch_prefs.xml    color_prefs.xml   preferences.xml  
+
+
+
+layout文件夹下面的 
+
+
+
+
+
+gridite.xml    main_frag.xml    main_toolbar.xml    
+namepathswitch_preference.xml   tabfragment.xml
+
+
+
+
+使用Realm数据库
+
